@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gpacalculatorpackage.SemesterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/prev_next_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/prev_next_bar"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/enter_the_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="To calculate GPA by goal, fill in the following fields and press Calculate GPA!"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_the_following"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/current_attempted_credits_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Current cumulative credits: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/dummy_view"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/current_cumulative_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/current_attempted_credits_text"
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@id/current_attempted_credits_text"
+                    android:gravity="center_horizontal"
+                    android:hint=" (1 - 999) "
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/current_cumulative_gpa_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_attempted_credits_text"
+                    android:layout_below="@id/current_attempted_credits_text"
+                    android:layout_marginTop="15dp"
+                    android:text="Current cumulative GPA: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/current_cumulative_gpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_cumulative_credits"
+                    android:layout_below="@id/current_cumulative_credits"
+                    android:gravity="center_horizontal"
+                    android:hint="(0.0 - 4.0)"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/desired_gpa_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_attempted_credits_text"
+                    android:layout_below="@id/current_cumulative_gpa_text"
+                    android:layout_marginTop="15dp"
+                    android:text="Desired GPA: "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/desired_gpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/current_cumulative_credits"
+                    android:layout_below="@id/current_cumulative_gpa"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:hint="(0.0 - 4.0)"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/calculate_clear_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout1"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/mybutton"
+                    android:text="Clear"/>
+                <Button
+                    android:id="@+id/calculate_gpa_goal_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/mybutton"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:paddingRight="10dp"
+                    android:text="Calculate GPA!" />
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calculate_clear_buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/prev_next_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_button_selector"
+            android:text="@string/previous"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_button_selector"
+            android:text="@string/next"
+            android:textColor="#6C6C70" />
+
+    </LinearLayout>
+</RelativeLayout>

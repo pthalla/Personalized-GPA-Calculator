@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/course"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="left"
+        android:hint="@string/enter_a_course_name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:layout_marginLeft="5dp"
+        android:maxLines="1"
+        android:maxWidth="50dp"
+        android:paddingTop="10dp" />
+
+    <Spinner
+        android:id="@+id/credits_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Spinner
+        android:id="@+id/grades_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="7dp"/>
+
+
+</LinearLayout>

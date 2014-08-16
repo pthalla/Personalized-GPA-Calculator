@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_actionbar_black">#222222</color>
+    <color name="icon_yellow">#ffffa000</color>
+    <color name="grayed_out">#6C6C70</color>
+    <color name="button_color">#ffffff</color>
+    <color name="cumulative_background">#ffececec</color>
+</resources>

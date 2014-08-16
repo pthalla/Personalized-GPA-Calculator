@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPA Calculator</string>
+
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+
+    <string name="select_an_option">Select an option: </string>
+    <string name="option_currentGPA">Calculate my current GPA</string>
+    <string name="gpa_by_goal">Calculate my GPA by goal</string>
+
+    <string name="semesters_title">Semesters</string>
+    <string name="semester_credits_text">Semester credits: </string>
+    <string name="semester_gpa_text">Semester GPA: </string>
+    <string name="cumulative_credits_text">Cumulative credits: </string>
+    <string name="cumulative_gpa_text">Cumulative GPA: </string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="courses">Course?</string>
+    <string name="enter_a_course_name">Enter name (optional)</string>
+    <string name="credits">Credits?</string>
+    <string name="grade">Grade?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="credits_array">
+        <item> </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="grades_array">
+        <item> </item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>D-</item>
+        <item>F</item>
+    </string-array>
+
+</resources>
